@@ -1,0 +1,71 @@
+body {
+    background:#252839;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+a{
+	color:#f2b632;
+}
+p{    
+    color:#b5b5b7;
+    text-align:center;
+}
+.jumbotron {
+	margin-top:10px;
+    margin-bottom:0px;
+    text-align:center;
+    background-color:#252839
+}
+.jumbotron h1 {
+    font-family: Helvetica, sans-serif;
+	font-size: 75px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bolder;
+    line-height:0px;
+    color:#b5b5b7;
+}
+.jumbotron p {
+    margin-top:50px;
+    font size:15px;
+    margin-bottom:0px;
+}
+.nav nav-pills ul li {
+    text-align:center;
+    display:inline;
+	color: #f2b632;
+}
+.nav>li.active>a{
+	color: #f2b632;
+	background-color: #677077;
+}
+.nav>li.active>a:hover,
+.nav>li.active>a:focus {
+    color: #f2b632;
+    background-color: #677077;
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+    color: #f2b632;
+    background-color: #677077;
+}
+.about h2{
+    color:#b5b5b7;
+}
+.contact h2{
+    color:#b5b5b7;
+}
+.about p{
+    text-align:left;
+}
+.contact p{
+    text-align:left;
+}
+
+
