@@ -58,9 +58,7 @@ p{
 .col-md-4 {
 	margin-top: 10px;
 }
-.pomodoroText p{
-	margin-top: 20px;
+.orange p {
+	color:#f2b632
 }
-.pomodoroText p span{
-	color:#f2b632;
-}
+
