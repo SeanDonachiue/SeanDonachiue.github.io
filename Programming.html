@@ -12,7 +12,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="progStyle.css">
     </head>
-    
+  	
     <body>
         <div class="jumbotron">
             <h1>Sean Donachiue</h1>
@@ -24,20 +24,21 @@
                     <ul class="nav nav-pills nav-justified">
                         <li><a href ="index.html">Home</a></li>
                         <li class="active"><a href="Programming.html">Software</a></li>
-                        <li><a href="#">Poetry</a></li>
+                        <!--<li><a href="#">Poetry</a></li>
                         <li><a href="#">Prose</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Blog</a></li>-->
                     </ul>
 				</div>
 				<hr />
 				<div class ="row">
+					<a id="pomodoro"></a>
 					<div class="col-md-4">
 						<div class="pomodoroText">
 						<p>I wrote this pomodoro timer app for Android as an exercise.
 						It alternates between work and break intervals until 							the loop count is reached. All three of these are set by the user
 						in the settings tab. I have yet to implement the progress tab,
 						but the idea would be for stat tracking on task streaks; an attempt
-						to gamify productivity.</p></div>
+							to gamify productivity.</p></div>
 						<div class="orange">
 						<p>Java/Android</p>
 						</div>
@@ -51,10 +52,10 @@
 				</div>
 				<hr />
 				<div class ="row">
+					<a id="graphics"></a>
 					<div class="col-md-6">
 						<img class="img-rounded" src="res/blinnPhong.PNG" alt="blinn-phong" height="300px" width="325px">
-						<div class="graphicsText">
-						<p>Implemented basic shading models in openGL. From left to right: Gouraud, Blinn, Blinn-Phong, Texture Mapping.</p></div>
+						<p>Implemented basic shading models in openGL. From left to right: Gouraud, Blinn, Blinn-Phong, Texture Mapping.</p>
 						<div class="orange">
 						<p>OpenGL/Javascript</p>
 						</div>
@@ -63,13 +64,14 @@
 						<img class="img-rounded" src="res/Raytracing.PNG" alt="Raytracing" height="300px" width="325px">
 						<p>Shadows and reflection accomplished using raytracing and collision detection with geometric primitives. Completed for CPSC 314 - Computer Graphics
 						<div class="orange">
-							<p>C++</p>
+						<p>C++</p>
 						</div>
 						</p>
 					</div>
 				</div>
 				<hr />
 				<div class="row">
+					<a id="restaurant"></a>
 					<div class="col-md-4">
 						<img class="img-rounded" src="res/restaurantQuiz.PNG" height="300px" width="200px">
 					</div>
@@ -85,6 +87,7 @@
 				</div>
 				<hr />
 				<div class="row">
+				<a id="EVCharge"></a>
 					<img class="img-rounded" src="res/EVChargeRoute.PNG" height="300px" width="700px">
 				</div>
 				<p>A web app for locating, routing between, and storing information about electric vehicle charging stations. My team used PgSQL to catalogue user login information, favourite stations and recently visited stations for each user, as well as aggregate ratings and reviews for each station. This was developed by a team of four over a few weeks as a school project for CPSC 310.</p>
