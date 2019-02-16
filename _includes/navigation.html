@@ -1,12 +1,4 @@
 <link rel="stylesheet" href="/../assets/css/nav.css">
-<script type="text/javascript">
-	let mainNav = document.getElementById('js-menu');
-	let navBarToggle = document.getElementById('js-navbar-toggle');
-
-	navBarToggle.addEventListener('click', function () {
-		mainNav.classList.toggle('active');
-	});
-</script>
 <nav class="navbar">
 	<span class="navbar-toggle" id="js-navbar-toggle">
 		<i class="fas fa-bars"></i>
@@ -22,3 +14,11 @@
 		{% endfor %}
 	</ul>
 </nav>
+<script type="text/javascript">
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('js-navbar-toggle');
+
+	navBarToggle.addEventListener('click', function () {
+		mainNav.classList.toggle('active');
+	});
+</script>
