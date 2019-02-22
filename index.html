@@ -5,12 +5,20 @@ title: Sean's Spaghetti
 <link rel="stylesheet" href="/assets/css/styles.css">
 <div class="grid-container">
     <div class="header">
-        <p>some header text</p>
+        <h1 class="head-blurb">I write software for my love of beating my bloodied head against challenging problems until they yield or I do. And then I try again. Sometimes it's messy. Welcome to Sean's Spaghetti.</h1>
     </div>
     <div class="recent">
-        <p>some text in recent posts</p>
+        <h2>Latest Posts</h2>
+        <ul class="post-previews">
+	       {% for post in site.posts %}
+		      <li>
+			     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			     <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+		      </li>
+	       {% endfor %}
+        </ul>
     </div>
     <div class="footer">
-        <p class="foot-blurb">I write software for my love of beating my bloodied head against challenging problems until they yield or I do. And then I try again.</p>
+        <p>Footer</p>
     </div>
 </div>
