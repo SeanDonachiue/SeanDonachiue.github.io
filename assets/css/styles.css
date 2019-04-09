@@ -12,6 +12,8 @@
     grid-column-end: col3;
     grid-row-start: row1;
     grid-row-end: row2;
+}
+h1 {
     text-align: center;
 }
 
