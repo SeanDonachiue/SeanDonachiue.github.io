@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Sean
-title: Max Length Palindrome Substring
+title: Max Length Palindromic Substring
 ---
 <p>I recently had the pleasure of undergoing my first technical coding interview. Unfortunately, I took the wrong approach to solving the following problem: Given a string of arbitrary length, find the longest palindrome it contains. The solution I set off with, somewhat embarrasingly, was to use a pointer i, set to the front of the string, and a pointer j, set to the back of the string, checking for character equality on each iteration of a loop, decrementing j for each comparison, but only incrementing i if the comparison was true... Then if a non equal character pairing is found, revert i to a prior value and keep checking j. Finally, if j == i, break, because you MUST have checked the whole string. Also, somewhere along the way, we wanted to be storing the indices of the start and end of the current max length palindrome. But it doesn't matter where we were going to do that, because the whole thing is wrong!</p>
 <p>The above approach leaves palindromes in the left half of the list unexamined. Additionally, its not clear that it even finds palindromes in the right half. So... what happened? Why did I start implementing this solution? During the interview, I thought, let's break the problem to something simpler. Instead of finding the longest palindrome, how can we just determine if a substring is a palindrome. This gives a fairly close solution to what I had, where you iterate pointers on either end towards each other as long as the characters they are pointing at are equal, but as soon as the longest palindrome is not symmetrical across the middle of the string, it doesn't return the optimal solution.</p>
@@ -48,3 +48,5 @@ title: Max Length Palindrome Substring
         document.getElementById(max-length-palindrome).innerHTML = input.substring(maxMidIndex - maxLength/2, maxMidIndex + maxLength/2);
     }
 </script>
+
+<p>April 8, 2019 Update: While relating the above experience and solutions to a former classmate a few weeks ago, I realized the problem can be solved by pushing the string to a stack, then </p>
