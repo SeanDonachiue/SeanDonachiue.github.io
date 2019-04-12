@@ -18,17 +18,18 @@ title: Max Length Palindromic Substring
 
 <script type="text/javascript">
     function isPalindrome(String input) {
-        
+        console.log("start of palindrome test");
         int maxLength = 1;
         int maxMidIndex = 1;
         
         for(int k = 1; k < input.length; k++) {
+            console.log("outer loop");
             int j = k + 1;
             int currMax = 1;
             for(int i = k - 1; i >= 0; i--) {
                 //if the characters are equal, iterate the currmax values and continue
                 //if the currmax is then greater than the maxlength thus far. 
-               
+               console.log("inner loop");
                 
                 //other reasons to break are... j goes over the edge, i goes over the edge
                 if(j >= input.length) break;
