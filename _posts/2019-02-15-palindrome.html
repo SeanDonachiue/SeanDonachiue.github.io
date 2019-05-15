@@ -8,20 +8,20 @@ title: Max Length Palindromic Substring
 <p>The correct approach: We needed to make the problem even smaller than that. What is the smallest length palindrome? One containing only a single letter. All single letter substrings are palindromes, and this single letter palindrome is always the middle index of a longer palindrome. So, we can start with the first letter in the string, and then check letters on either side of it for equality. If while doing this, one of our pointers goes past either end of the list, or the values pointed at are no longer equal, we iterate our pointer identifying the "middle" of the palindrome currently being checked. At each step, we store the max length palindrome and the index of its middle character. When the algorithm terminates, we can determine the substring to return from these values with input.substring(middleIndex - length/2, middleIndex + length/2)</p>
 <p>Because this approach treats each letter in the string as the center of a potential palindrome, it always returns the optimal solution. I wouldnt be surprised if there exists a dynamic programming solution that is faster, but it is beyond my ability to think up at this time.</p>
 
-<form onsubmit="isPalindrome(document.getElementById(palindromeIn).value);">
+<form id="palindromeform" onsubmit="isPalindrome(this.form.elements); return false;">
     String to Check:<br>
-    <input id="palindromeIn" type="text" value=""><br>
+    <input id="palindromeIn" type="text" name="pInput" value=""><br>
     <input type="submit">
 </form>
 
 <p id="max-length-palindrome">output</p>
 
 <script type="text/javascript">
-    function isPalindrome(String input) {
+    function isPalindrome(params) {
         console.log("start of palindrome test");
         int maxLength = 1;
         int maxMidIndex = 1;
-        
+        input = params.pInput.value;
         for(int k = 1; k < input.length; k++) {
             console.log("outer loop");
             int j = k + 1;
@@ -48,6 +48,9 @@ title: Max Length Palindromic Substring
         //set the output to the max length palindrome.
         document.getElementById(max-length-palindrome).innerHTML = input.substring(maxMidIndex - maxLength/2, maxMidIndex + maxLength/2);
     }
+
+    //const form = document.getElementById("palindromeform");
+    //form.addEventListener("submit", isPalindrome(form.))
 </script>
 
 <p>April 8, 2019 Update: While relating the above experience and solutions to a former classmate a few weeks ago, I realized the problem can be solved by pushing the string to a stack, then </p>
