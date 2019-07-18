@@ -28,8 +28,8 @@ a {
         display: flex;
         justify-content: center;
         text-align: center;
-        background-image: radial-gradient(circle, transparent 40%, #252839),
-            url(assets/images/chief-bg.PNG); 
+        background-image: radial-gradient(circle, transparent 20%, #252839),
+            url(cd/images/chief-bg.PNG); 
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
