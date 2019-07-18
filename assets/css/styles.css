@@ -29,7 +29,7 @@ a {
         justify-content: center;
         text-align: center;
         background-image: radial-gradient(circle, transparent 40%, #252839),
-            url(../images/Chief-bg.png); 
+            url(../images/Chief-bg.PNG); 
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
