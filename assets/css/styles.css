@@ -34,9 +34,10 @@ a {
         background-position: center;
         background-repeat: no-repeat;
         object-fit: cover;
-        height: 512px;
+        height: 600px;
         width: 100%;
         border-radius: 25px;
+        overflow: hidden;
     }
     
     .project-container {
@@ -59,7 +60,7 @@ a {
         margin: 10px;
     }
     .flex-item img{
-        margin: 10px;
+        margin-top: 10px;
     }
     
     
