@@ -84,6 +84,9 @@ a {
     h2, h3{
         font-size: 3vw;
     }
+    p {
+        font-size: 5vh:
+    }
     .flex-item {
         width:90%;
         
@@ -97,6 +100,7 @@ midsize screen
         height: 400px;
     }
 }
+
 .post-previews {
     list-style-type: none;
     display: flex;
