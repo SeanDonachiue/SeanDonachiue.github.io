@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sean Donachiue Site</title>
+        <meta name="description" content="My Programming Projects">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="progStyle.css">
+    </head>
+  	
+    <body>
+        <div class="header">
+            <h1>Sean Donachiue</h1>
+            <!-- hire me button -->
+            <p>I write software for my love of beating my bloodied head against challenging problems until they yield or I do. And then I try again. Below are some projects.</p>
+        </div>
+        <div class="row">
+            <div class = "col-md-6 col-md-offset-3">
+                <div class="nav">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href ="index.html">Home</a></li>
+                        <li class="active"><a href="Programming.html">Portfolio</a></li>
+                        <!--<li><a href="#">Poetry</a></li>
+                        <li><a href="#">Prose</a></li>
+                        <li><a href="#">Blog</a></li>-->
+                    </ul>
+				</div>
+				<div class ="grid-container">
+                    <hr/>
+                    <div class="flex-item">
+                        <h3>Web Projects</h3>
+                        <div class="image">
+                            <img class="img-rounded" src="res/responsive-rim.PNG" alt="rehabinmotion.ca website thumbnail" height="auto" width="45%">
+                            <div>
+                                <a href="https:rehabinmotion.netlify.com"><h4>Rehab in Motion</h4></a>
+                                <p>Most recently, I've designed, developed, and deployed this responsive site for the Calgary-based physical wellness and rehab clinician company Rehab in Motion. <br><span id="orange">Remote project, built using gatsby.js, HTML, CSS.</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="image">
+                            <div>
+                                <a href="http://www.brucedmiller.ca"><h4>Bruce D. Miller</h4></a>
+                                <p>I am currently maintaining this site and recently added SoundCloud iframe embeds and bandcamp links to purchase songs, as well as Stripe integration for direct payments.<br><span id="orange">Built in Wix</span></p>
+                            </div>
+                            <img class="img-rounded" src="res/brucemiller.PNG" alt="brucedmiller.ca Musician Website Thumbnail" height="auto" width="45%">
+                        </div>
+                        <div class="image">
+                            <img class="img-rounded" src="res/strutorthotics.PNG" alt="strutorthotics.com thumbnail" height="auto" width="70%">
+                            <div>
+                            <a href="https://strutorthotics.com"><h4>Strut Orthotics</h4></a>
+                            <p>Host migration, responsive redesign, pagespeed optimization, SEO audit and upgrades. <br><span id="orange">Wordpress</span></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr/>
+                    <a id="academic"></a>
+                    <h3>Academic Projects</h3>
+                    <hr/>
+                    <div class="flex-item" id="janitor">
+                        <div class="image"><img src="res/dungeonjanitor.PNG" alt="top-down-game" height="auto" width="100%"></div>
+                        <br>
+                        <p>A game written using OpenGL from scratch (no game engine). You play a janitor and your goal is to clean the level, a task made difficult by your lack of combat abilities. My individual contributions include a modular and extensible 2D physics system, as well as spritesheet animation functions. Term project for Game Programming course @ UBC.</p>
+                        <a href="https://github.com/NeilConnatty/DungeonJanitor">Source</a>
+                    </div>
+                    <hr />
+                    <a id="graphics"></a>
+					<div class="flex-item">
+						<img class="img-rounded" src="res/blinnPhong.PNG" alt="blinn-phong" height="300px" width="325px">
+                        <img class="img-rounded" src="res/Raytracing.PNG" alt="Raytracing" height="300px" width="325px">
+				    </div>
+                    <div class="flex-item">
+                    <div class="flex-text">
+                        <p>Implemented basic shading models in WebGL. From left to right: Gouraud, Blinn, Blinn-Phong, Texture Mapping.</p>
+						<p id="orange">WebGL/Javascript</p>
+                    </div>
+                        <div class="flex-text">
+						<p>Shadows and reflection accomplished using raytracing and collision detection with geometric primitives. Completed for CPSC 314 - Computer Graphics
+						<p id="orange">C++/OpenGL</p>
+                    </div>
+                    </div>
+                    <hr />
+                    <div class="flex-item" id="PRNG">
+                        <div class="image"><img src="res/white-noise.jpg" alt="RNG" height="auto" width="90%">
+                        </div>
+                        <br>
+                        <p>A cryptographically secure, true random number generator in the windows console using the input from the microphone as an entropy source, and a 2D particle system as a model for byte representation.   Term project for Computer Security.</p>
+                        <a href="https://github.com/SeanDonachiue/ParticleTRNG">Source</a> 
+                    </div>
+					<hr />
+					<a id="restaurant"></a>
+					<div class="flex-item">
+						<img class="img-rounded" src="res/restaurantQuiz.PNG" height="300px" width="200px">
+                        <img class="img-rounded" src="res/ResQuiz2.PNG" height="300px" width="200px">
+						<p>Another Android app, this restaurant location game parses data from Yelp to generate a list of restaurants for major cities in Canada, then asks the user to locate them by touching the Google Map. The colour of the resulting marker is interpolated between red and green, depending on how far or close the marker is to the restaurant. The more guesses, the lower your score.</p>
+						<p id="orange">Java/Android</p>
+					</div>
+                    <hr />
+					<div class="flex-item">
+						<img class="img-rounded" src="res/TImer%20App.PNG" alt="Timer App" height="300px" width="200px">
+						<img class="img-rounded" src="res/Settings%20Tab.PNG" alt="Timer Settings" height="300px" width="200px">
+					</div>
+				    <div class="flex-item">
+                        <div class="pomodoroText">
+						<p>I wrote this pomodoro timer app for Android as an exercise.
+						It alternates between work and break intervals until 							
+                        the loop count is reached. All three of these are set by the user
+						in the settings tab.</p></div>
+						<p id="orange">Java/Android Studio</p>
+					</div>
+				<!--<div class="flex-item">
+					<hr />
+					<a id="EVCharge"></a>
+                    <div id="ev-container"></div>
+                    <p>A web app for locating, routing between, and storing information about electric vehicle charging stations. My team used pgSQL to catalogue user login information, favourite stations and recently visited stations for each user, as well as aggregate ratings and reviews for each station. This was developed by a team of four over a few weeks as a school project for CPSC 310.</p>
+				    <p id="orange">Javascript/HTML/CSS/Node/PostgreSQL/Angular</p>
+					<hr />
+				</div> -->
+                </div>
+            </div>
+		</div>
+    </body>
