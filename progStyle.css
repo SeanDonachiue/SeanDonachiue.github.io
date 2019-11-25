@@ -18,6 +18,8 @@ hr {
 a{
 	color: #f2b632;
 	text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size:1.5rem;
 }
 p{    
     color:#b5b5b7;
@@ -27,28 +29,38 @@ p{
     font-size: 1.5rem;
 }
 .header {
-	margin-top:10px;
     margin-bottom:0px;
     width: 100%;
     text-align: center;
-    background-color: #252839
+    background-color: #252839;
+    background: url("res/coding%201920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header-text {
+    color: aliceblue;
+    font-size: 1.8rem;
+    font-family: courier;
+    font-weight: bolder;
+    background-color: #252839;
 }
 .header p {
-    padding-top: 50px;
-    font size:15px;
+    margin-top: 25px;
     width: 50%;
     position: relative;
     left: 25%;
     margin-bottom:0px;
-    font-family: courier;
+    padding-bottom: 25px;
 }
 .header h1 {
     font-family: courier;
 	font-size: 3rem;
 	font-style: normal;
 	font-weight: bolder;
+    padding-top: 10px;
+    background-color: #252839;
     line-height: 1;
-    color: lightgrey;
+    color: aliceblue;
 }
 .nav nav-pills ul li {
     text-align: center;
