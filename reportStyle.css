@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     margin-left: 15rem;
     margin-right: 15rem;
+    width:70%;
 }
 h3 {
     margin:8px;
