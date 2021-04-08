@@ -51,7 +51,8 @@ h1, h2, h3, h4 {
     align-content: space-evenly;
     justify-content: space-evenly;
 }
-.flex-item p {
+.image p {
+    flex-grow: 1;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -69,3 +70,7 @@ h1, h2, h3, h4 {
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
+}
+.embed {
+    flex-grow: 2;
+}
