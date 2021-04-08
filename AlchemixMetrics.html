@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alchemix Metrics Site</title>
+        <meta name="description" content="Alchemix Growth and Sustainability">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="reportStyle.css">
+    </head>
+  	
+    <body>
+        <h1>Alchemix Growth and Sustainability Data</h1>
+        <h4>Growth</h4>
+        <p>In the past, raw TVL has been the primary metric for evaluating and comparing defi protocols. However, because much of the TVL in defi currently is incentivized by token inflation rewards, this metric gives a poor view of fundamental value. Recently we've seen a move towards metrics that portray "real" protocol use cases and protocol revenue, where possible. </p>
+        <p>For Alchemix, the primary proposed use-case is 'loans that pay themselves'. I've embedded live charts, courtesy of <a href='https://flipsidecrypto.com/'>Flipside Crypto</a> to evaluate the growth of this use case over time.</p>
+        <div id='loans_div'>
+            <!-- first time users -->
+            <iframe href="https://velocity-app.flipsidecrypto.com/velocity/visuals/4f0c8774-b2e2-484c-9a44-8a86bb70e799/dcf743af-e3d3-403f-9f31-0b22aff073bb" width="800" height="600" />
+            <p>This shows the number of first time wallet interactions with the contract recorded on the network each day. In my view, this is the best metric we have for real, organic growth.</p>
+            <!-- daily deposit event count -->
+            <iframe href="https://velocity-app.flipsidecrypto.com/velocity/visuals/a0b4afca-1c12-4c0e-842f-a4b13f490305/24e6c4e6-f24a-42bd-8352-d230d87d3e61" width="800" height="600" />
+            <p>While quite similar to unique wallet interactions for now, expect these metrics to diverge over time with daily deposit events outpacing first time users, as the protocol gradually accrues repeat users.</p>
+            <!-- Hourly Median loan value -->
+            <iframe href="https://velocity-app.flipsidecrypto.com/velocity/visuals/a4442f55-896a-43e1-9f3f-7c288c4af0b1/dde2e6f2-8cbf-45d8-b3d7-420d7680ba33" width="800" height="600" />
+            <p>A high resolution breakdown of the sizes of loans in alUSD.</p>
+
+            <p>Protocol controlled value - governance tokens gives us an estimate of protocol revenue. Since this protocol is only a month old, this isn't very useful to forecast from, but it will be very interesting to come back to.</p>
+        </div>
+        <h4>Sustainability</h4>
+        <p>Alchemix has major dependencies on four popular defi protocols: MakerDAO, Yearn Finance, Curve, and SushiSwap. Barring attacks on these protocols, I identify the main systemic risk within Alchemix to be the stability of the alUSD:Dai peg, as well as the Dai:USD peg itself.</p>
+
+        <p>Of the above protocols, MakerDAO is the oldest and has already survived a catastrophe following the March 12th 2020 liquidation cascade. Due to the rapidly falling price of ETH, demand for Dai to pay back loans in Maker was so high that Dai was temporarily worth $1.12.</p>
+
+        <p>Were this to happen again today, so long as the Dai balance in the transmuter is large enough, alUSD could be transmuted to Dai 1:1 and then sold on crv.to at $1.12. In the case that Dai price moves above $1, there need only be enough Dai in the transmuter and liquidity in the alUSD-3CRV pool on Curve to account for the outstanding alUSD supply. The same applies if alUSD falls below $1, but in reverse.</p>
+
+        <iframe href="https://velocity-app.flipsidecrypto.com/velocity/visuals/fad2c410-f9a5-44c8-8ad3-2607c768910d/4c89bd75-cbb8-4cf9-9fa5-b08235464f0f" width="800" height="600" />
+
+        <p>For a healthy peg, we want to see these two lines track each other closely, so that large transactions don't suffer from slippage.</p>
+
+        <p>For the foreseeable future, alUSD-3CRV LPs will remain heavily incentivized by inflation rewards of both CRV and ALCX. It remains to be seen whether a downturn in prices will depress yields enough for LPs to look for alternatives.</p>
+
+        <p>With regards to the Transmuter, The balance of Dai there is built over time by taking a protocol fee from yields. As time goes on, the capacity of the backstop should continue to grow.</p>
+
+        <iframe href="https://velocity-app.flipsidecrypto.com/velocity/visuals/fdc44275-b11d-453d-ba65-7bebf3ab4161/71146ef2-e88b-4e06-abac-c659e818f0a2" width="800" height="600" />
+
+        <p>As of v1.1, some of the Transmuter dai balance is flipped back into yearn vaults to produce higher yields, faster loan repayments, and build a larger transmuter balance. It's not clear at this time whether the rate at which alUSD can be converted to Dai in the Transmuter is affected by these changes, but I believe the developers are aware of that risk, as they've added a "Force Transmute" function to quickly pull DAI that was overallocated to other longer term alUSD stakers in the transmuter contract.</p>
+
+            <h4>Resources:</h4>
+
+            <p>Great data driven overview of alcx from <a href='https://twitter.com/0xdef1'>@0xdef1</a>
+            <a href='https://dyor.fi/alcx'></a></p>
+
+            <p>On Dai peg stability in MakerDAO during march 12th liquidation cascade
+            <a href= 'https://medium.com/dragonfly-research/daos-ex-machina-an-in-depth-timeline-of-makers-recent-crisis-66d2ae39dd65'>On Dai peg stability in MakerDAO during march 12th liq cascade</a></p>
+
+            <h4>Contract Addresses:</h4>
+            <p>
+                0xc21D353FF4ee73C572425697f4F5aaD2109fe35b  loans contract (alchemist) <br>
+                0xf3cFfaEEa177Db444b68FB6f033d4a82f6D8C82d  transmuterv1.1 <br>
+                0x8392F6669292fA56123F71949B52d883aE57e225  multisig/protocol wallet/deployer address <br>
+                0xAB8e74017a8Cc7c15FFcCd726603790d26d7DeCa  staking pools for alcx farming <br>
+                0x43b4FdFD4Ff969587185cDB6f0BD875c5Fc83f8c  alUSD-3crv liquidity pool <br>
+                0x6b175474e89094c44da98b954eedeac495271d0f  dai token contract <br>
+                0xbc6da0fe9ad5f3b0d58160288917aa56653660e9  alUSD token contract <br>
+                0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490  3crv token contract </p>
+</body>

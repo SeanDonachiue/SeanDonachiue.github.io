@@ -1,0 +1,30 @@
+body {
+    background:#252839;
+    overflow-x: hidden;
+}
+h3 {
+    margin:8px;
+    color: lightgrey;
+    text-align: center;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0.3em 0.5em;
+    padding: 0;
+}
+a{
+	color: #f2b632;
+	text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size:1.5rem;
+}
+p{    
+    color:#b5b5b7;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.5rem;
+}
