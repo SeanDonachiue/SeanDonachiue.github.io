@@ -17,7 +17,7 @@ hr {
 }
 a{
 	color: #f2b632;
-	text-align: center;
+	text-align: left;
     font-family: 'Helvetica', sans-serif;
     font-size:1.5rem;
 }
@@ -25,7 +25,9 @@ p{
     color:#b5b5b7;
     font-family: 'Helvetica', sans-serif;
     font-weight: 200;
-    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: left;
     font-size: 1.5rem;
 }
 h1, h2, h3, h4 {    
@@ -55,7 +57,7 @@ h1, h2, h3, h4 {
     margin-top: 15px;
 }
 .flex-text {
-    width: 50%;
+    width: 30%;
 }
 .image {
     display: flex;
