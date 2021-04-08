@@ -18,22 +18,22 @@
         <h1>Alchemix Growth and Sustainability Data</h1>
         <h4>Growth</h4>
         <p>In the past, raw TVL has been the primary metric for evaluating and comparing defi protocols. However, because much of the TVL in defi currently is incentivized by token inflation rewards, this metric gives a poor view of fundamental value. Recently we've seen a move towards metrics that portray "real" protocol use cases and protocol revenue, where possible. </p>
-        <p>For Alchemix, the primary proposed use-case is 'loans that pay themselves'. I've embedded live charts, courtesy of <a href='https://flipsidecrypto.com/'>Flipside Crypto</a> to evaluate the growth of this use case over time.</p>
-        <div id='loans_div'>
+        <p>For Alchemix, the primary proposed use-case is stable coin 'loans that pay themselves'. I've embedded live charts, courtesy of <a href='https://flipsidecrypto.com/'>Flipside Crypto</a> to evaluate the growth of this use case over time.</p>
+        <div class='flex-item'>
             <!-- first time users -->
-            <div class='viz'>
+            <div class='image'>
                 <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/4f0c8774-b2e2-484c-9a44-8a86bb70e799/dcf743af-e3d3-403f-9f31-0b22aff073bb" width="800" height="600"> </iframe>
 
                 <p>This shows the number of first time wallet interactions with the contract recorded on the network each day. In my view, this is the best metric we have for real, organic growth.</p>
             </div>
             <!-- daily deposit event count -->
-            <div class='viz'>
+            <div class='image'>
                 <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/a0b4afca-1c12-4c0e-842f-a4b13f490305/24e6c4e6-f24a-42bd-8352-d230d87d3e61" width="800" height="600"></iframe>
 
                 <p>While quite similar to unique wallet interactions for now, expect these metrics to diverge over time with daily deposit events outpacing first time users, as the protocol gradually accrues repeat users.</p>
             </div>
             <!-- Hourly Median loan value -->
-            <div class='viz'>
+            <div class='image'>
                 <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/a4442f55-896a-43e1-9f3f-7c288c4af0b1/dde2e6f2-8cbf-45d8-b3d7-420d7680ba33" width="800" height="600"></iframe>
                 <p>A high resolution breakdown of the sizes of loans in alUSD.</p>
             </div>
@@ -44,19 +44,24 @@
         <p>Of the above protocols, MakerDAO is the oldest and has already survived a catastrophe following the March 12th 2020 liquidation cascade. Due to the rapidly falling price of ETH, demand for Dai to pay back loans in Maker was so high that Dai was temporarily worth $1.12.</p>
 
         <p>Were this to happen again today, so long as the Dai balance in the transmuter is large enough, alUSD could be transmuted to Dai 1:1 and then sold on crv.to at $1.12. In the case that Dai price moves above $1, there need only be enough Dai in the transmuter and liquidity in the alUSD-3CRV pool on Curve to account for the outstanding alUSD supply. The same applies if alUSD falls below $1, but in reverse.</p>
-        <div class='viz'>
-            <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/1c589755-d056-48a0-882b-35997ff38f15/cee4376a-32c5-49fb-b568-564f3330a059" width="800" height="600"></iframe>
-            <p>We can evaluate the safety of the peg from the above with (3CRV liquidity + Transmuter DAI) / Total alUSD Supply<br> If this function falls below 1, the peg is at serious risk. In that scenario, the transmuter backstop has dwindled, liquidity has dried up, or both. At time of writing, the ratio is a healthy 1.54.</p>
-        </div>
-        <div class='viz'>
-            <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/fad2c410-f9a5-44c8-8ad3-2607c768910d/4c89bd75-cbb8-4cf9-9fa5-b08235464f0f" width="800" height="600"></iframe>
-            <p>For a healthy peg, we also want to see these two lines track each other closely, so that large transactions don't suffer from slippage.</p>
+        <div class="flex-item">
+            <div class='image'>
+                <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/1c589755-d056-48a0-882b-35997ff38f15/cee4376a-32c5-49fb-b568-564f3330a059" width="800" height="600"></iframe>
+                <p>We can evaluate the safety of the peg from the above with (3CRV liquidity + Transmuter DAI) / Total alUSD Supply<br> If this function falls below 1, the peg is at serious risk. In that scenario, the transmuter backstop has dwindled, liquidity has dried up, or both. At time of writing, the ratio is a healthy 1.54.</p>
+            </div>
+        <div class='image'>
+                <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/fad2c410-f9a5-44c8-8ad3-2607c768910d/4c89bd75-cbb8-4cf9-9fa5-b08235464f0f" width="800" height="600"></iframe>
+                <p>For a strong peg, we also want to see these two lines track each other closely, so that large transactions don't suffer from slippage.</p>
+            </div>
         </div>
         <p>For the foreseeable future, alUSD-3CRV LPs will remain heavily incentivized by inflation rewards of both CRV and ALCX. It remains to be seen whether a downturn in prices will depress yields enough for LPs to look for alternatives.</p>
 
-        <p>With regards to the Transmuter, The balance of Dai there is built over time by taking a protocol fee from yields. As time goes on, the capacity of the backstop should continue to grow.</p>
-
-        <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/fdc44275-b11d-453d-ba65-7bebf3ab4161/71146ef2-e88b-4e06-abac-c659e818f0a2" width="800" height="600"></iframe>
+        <div class="flex-item">
+            <div class='image'>
+                <iframe src="https://velocity-app.flipsidecrypto.com/velocity/visuals/fdc44275-b11d-453d-ba65-7bebf3ab4161/71146ef2-e88b-4e06-abac-c659e818f0a2" width="800" height="600"></iframe>
+                <p>With regards to the Transmuter, The balance of Dai there is built over time by taking a protocol fee from yields. As time goes on, the capacity of the backstop will continue to grow. Query by written by 0xdef1.</p>
+            </div>
+        </div>
 
         <p>As of v1.1, some of the Transmuter dai balance is flipped back into yearn vaults to produce higher yields, faster loan repayments, and build a larger transmuter balance. It's not clear at this time whether the rate at which alUSD can be converted to Dai in the Transmuter is affected by these changes, but I believe the developers are aware of that risk, as they've added a "Force Transmute" function to quickly pull DAI that was overallocated to other longer term alUSD stakers in the transmuter contract.</p>
 
