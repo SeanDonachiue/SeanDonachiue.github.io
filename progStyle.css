@@ -25,7 +25,9 @@ p{
     color:#b5b5b7;
     font-family: 'Helvetica', sans-serif;
     font-weight: 200;
-    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: left;
     font-size: 1.5rem;
 }
 .header {
