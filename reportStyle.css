@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
     justify-content: space-evenly;
 }
 .image p {
-    flex-grow: 1;
+    flex-grow: 1.2;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
     margin-top: 15px;
 }
 .flex-text {
-    width: 30%;
+    width: 40%;
 }
 .image {
     display: flex;
