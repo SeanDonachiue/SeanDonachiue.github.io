@@ -33,3 +33,7 @@ h1, h2, h3, h4 {
     color: lightgrey;
     text-align: center;
 }
+.viz {
+    display:inline-block;
+    vertical-align: center;
+}
